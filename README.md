@@ -12,7 +12,7 @@
 <img width="1718" height="815" alt="PixPin_2026-07-26_11-00-05" src="https://github.com/user-attachments/assets/07815762-94f0-46b3-b6cc-fc62d322f36e" />
 
 
-
+详细图文教程：https://acaiy.cn/infinite-canvas
 
 ## 0.1.2 更新内容
 
