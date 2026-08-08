@@ -12,6 +12,10 @@
 
 <img width="1718" height="815" alt="造作画布工作流界面" src="https://github.com/user-attachments/assets/07815762-94f0-46b3-b6cc-fc62d322f36e" />
 
+## 纯小白看这里
+
+**某些中转需要稳定的网络配置，如果你不清楚什么是VPN，优先配置linkapi的模型。**
+
 ## 当前版本：v0.1.4
 
 v0.1.4 重点完成 Midjourney 工作台、参考图与连续变化闭环，并补充 MiniMax H3 视频能力和画布可靠性收口：
