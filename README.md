@@ -2,7 +2,7 @@
 
 造作画布是一款面向 AI 图片、视频和音频工作流的 Windows 本地可视化画布。
 
-**[直接下载造作画布 v0.2.1](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases/download/v0.2.1/ZZHB-0.2.1-win-x64.zip)** · [查看 v0.2.1 发布说明](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases/tag/v0.2.1) · [全部历史版本](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases)
+**[直接下载造作画布 v0.2.1](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases/download/v0.2.1/ZZHB-0.2.1-win-x64.zip)** · [画布使用手册](https://acaiy.cn/article/canvas-guide/) · [查看 v0.2.1 发布说明](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases/tag/v0.2.1) · [全部历史版本](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases)
 
 你可以在同一个项目里整理参考图、提示词、音频、视频、模型结果和设计说明，再把它们连接成可持续修改的工作流程。本仓库只用于发布 Windows 成品和公开使用说明，不提供商业产品源码。
 
