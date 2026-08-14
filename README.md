@@ -2,7 +2,7 @@
 
 造作画布是一款面向 AI 图片、视频和音频工作流的 Windows 本地可视化画布。
 
-**[直接下载造作画布 v0.2.5](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases/download/v0.2.5/ZZHB-0.2.5-win-x64.zip)** · [画布使用手册](https://acaiy.cn/article/canvas-guide/) · [查看 v0.2.5 发布说明](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases/tag/v0.2.5) · [全部历史版本](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases)
+**[直接下载造作画布 v0.2.6](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases/download/v0.2.6/ZZHB-0.2.6-win-x64.zip)** · [画布使用手册](https://acaiy.cn/article/canvas-guide/) · [查看 v0.2.6 发布说明](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases/tag/v0.2.6) · [全部历史版本](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases)
 
 你可以在同一个项目里整理参考图、提示词、音频、视频、模型结果和设计说明，再把它们连接成可持续修改的工作流程。本仓库只用于发布 Windows 成品和公开使用说明，不提供商业产品源码。
 
@@ -20,7 +20,7 @@
 
 ## 下载与安装
 
-1. 下载 [`ZZHB-0.2.5-win-x64.zip`](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases/download/v0.2.5/ZZHB-0.2.5-win-x64.zip)。
+1. 下载 [`ZZHB-0.2.6-win-x64.zip`](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases/download/v0.2.6/ZZHB-0.2.6-win-x64.zip)。
 2. 将 ZIP **完整解压**到普通文件夹，不要直接在压缩包内运行。
 3. 双击 `ZZHB\ZZHB.exe`，等待本地服务启动并自动打开 Windows 默认浏览器。
 4. 使用期间保持程序运行；关闭程序会同时停止本地服务。
@@ -34,23 +34,22 @@
 - 不要公开分享 API Key，也不要在 Issue 中粘贴 Key、客户资料、私人项目、未脱敏截图或完整日志。
 - ComfyUI 工作流需要你自行安装并启动对应的本机或云端 ComfyUI 服务，再填写可访问的 Base URL。
 
-## v0.2.5 主要更新
+## v0.2.6 主要更新
 
-建议所有用户升级到 v0.2.5。本版集中修复启动、模型配置读取和画布状态一致性问题：
+建议所有用户升级到 v0.2.6。本版紧急修复 React Flow 画布的连线回归：
 
-- **启动与模型预设**：修复成品环境读取模型预设及模型交付合同的问题，避免启动后模型配置不可用。
-- **MiniMax 官方 H3**：一个官方模型连接下清楚区分生成视频、优化提示词和升至 2K 三种用途。
-- **视频参考条件提示**：支持视频参考的节点会明确提示当前渠道需要的 HTTPS 素材条件；条件不足时在提交前停止。
-- **模型交付合同**：分开表达模型能力、渠道传输、产品接通、运行条件与验证证据，避免把“模型支持”误写成“本机直接可用”。
-- **项目与界面一致性**：Midjourney 停靠面板按项目独立恢复，并收口主题可读性、节点动作、状态、保存与模板语义。
+- **拖线恢复**：修复基础图片、文本以及视频节点引用端口无法按预期建立连接的问题。
+- **统一连接判定**：17 类当前节点、真实端口和运行消费者共用同一连接合同，拖线预览与实际建边保持一致。
+- **明确拒绝无效连接**：没有正式消费者或不满足媒体条件的组合会明确拒绝，不再出现预览可连但实际失败的情况。
+- **发布基线不变**：模型能力、Provider、Connection、模型包、工作流、模板与发布种子沿用 v0.2.5 正式基线。
 
 ## 下载校验
 
 | 项目 | 内容 |
 | --- | --- |
-| 文件名 | `ZZHB-0.2.5-win-x64.zip` |
-| 文件大小 | 75,630,639 bytes |
-| SHA-256 | `aeb187f4ec1309a838cc4805f928148968128a317771e86a32a8443d945d4e13` |
+| 文件名 | `ZZHB-0.2.6-win-x64.zip` |
+| 文件大小 | 75,631,135 bytes |
+| SHA-256 | `edc170a12c52ccedccc16811bd3568ce944d662756672cf707ce09df1fc3d0c1` |
 
 ## 已知边界
 
