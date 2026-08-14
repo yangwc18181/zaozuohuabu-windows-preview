@@ -2,7 +2,7 @@
 
 造作画布是一款面向 AI 图片、视频和音频工作流的 Windows 本地可视化画布。
 
-**[直接下载造作画布 v0.2.3](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases/download/v0.2.3/ZZHB-0.2.3-win-x64.zip)** · [画布使用手册](https://acaiy.cn/article/canvas-guide/) · [查看 v0.2.3 发布说明](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases/tag/v0.2.3) · [全部历史版本](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases)
+**[直接下载造作画布 v0.2.5](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases/download/v0.2.5/ZZHB-0.2.5-win-x64.zip)** · [画布使用手册](https://acaiy.cn/article/canvas-guide/) · [查看 v0.2.5 发布说明](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases/tag/v0.2.5) · [全部历史版本](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases)
 
 你可以在同一个项目里整理参考图、提示词、音频、视频、模型结果和设计说明，再把它们连接成可持续修改的工作流程。本仓库只用于发布 Windows 成品和公开使用说明，不提供商业产品源码。
 
@@ -14,7 +14,7 @@
 
 ## 下载与安装
 
-1. 下载 [`ZZHB-0.2.3-win-x64.zip`](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases/download/v0.2.3/ZZHB-0.2.3-win-x64.zip)。
+1. 下载 [`ZZHB-0.2.5-win-x64.zip`](https://github.com/yangwc18181/zaozuohuabu-windows-preview/releases/download/v0.2.5/ZZHB-0.2.5-win-x64.zip)。
 2. 将 ZIP **完整解压**到普通文件夹，不要直接在压缩包内运行。
 3. 双击 `ZZHB\ZZHB.exe`，等待本地服务启动并自动打开 Windows 默认浏览器。
 4. 使用期间保持程序运行；关闭程序会同时停止本地服务。
@@ -28,24 +28,27 @@
 - 不要公开分享 API Key，也不要在 Issue 中粘贴 Key、客户资料、私人项目、未脱敏截图或完整日志。
 - ComfyUI 工作流需要你自行安装并启动对应的本机或云端 ComfyUI 服务，再填写可访问的 Base URL。
 
-## v0.2.3 主要更新
+## v0.2.5 主要更新
 
-- **H3 兼容修复**：供应商显示名称变化不再导致已配置的 MiniMax 官方或第三方模型服务提供商 H3 被误判为身份不匹配。
-- **H3 结果找回**：修复第三方 H3 已完成任务的结果地址解析；找回入口更醒目，并明确只查询原任务、不重新提交生成。
-- **模型能力一致性**：设置、首页、正式节点、底部生成器和模板统一读取 Connection 已保存的模型能力，避免预设更新悄悄改变已有配置的运行选项。
-- **发布保护**：候选构建会与上一版本的稳定模型能力基线比较，并排除构建电脑上的个人连接。
+建议所有用户升级到 v0.2.5。本版集中修复启动、模型配置读取和画布状态一致性问题：
+
+- **启动与模型预设**：修复成品环境读取模型预设及模型交付合同的问题，避免启动后模型配置不可用。
+- **MiniMax 官方 H3**：一个官方模型连接下清楚区分生成视频、优化提示词和升至 2K 三种用途。
+- **视频参考条件提示**：支持视频参考的节点会明确提示当前渠道需要的 HTTPS 素材条件；条件不足时在提交前停止。
+- **模型交付合同**：分开表达模型能力、渠道传输、产品接通、运行条件与验证证据，避免把“模型支持”误写成“本机直接可用”。
+- **项目与界面一致性**：Midjourney 停靠面板按项目独立恢复，并收口主题可读性、节点动作、状态、保存与模板语义。
 
 ## 下载校验
 
 | 项目 | 内容 |
 | --- | --- |
-| 文件名 | `ZZHB-0.2.3-win-x64.zip` |
-| 文件大小 | 74,483,131 bytes |
-| SHA-256 | `5ab1df7d9745763b87adc7355417f60b5138190338c2e642d68a3d15f8ba2b4c` |
+| 文件名 | `ZZHB-0.2.5-win-x64.zip` |
+| 文件大小 | 75,630,639 bytes |
+| SHA-256 | `aeb187f4ec1309a838cc4805f928148968128a317771e86a32a8443d945d4e13` |
 
 ## 已知边界
 
-旧 H3 任务能否找回取决于原服务是否仍允许查询该任务；部分付费 H3 路径和具体自定义 ComfyUI 节点的兼容性取决于用户选择的服务、网络条件和节点定义。大项目性能仍在持续优化。本说明不表示所有真实付费渠道或所有自定义节点组合都已经完成验证。
+旧 H3 任务能否找回取决于原服务是否仍允许查询该任务；MiniMax H3、Seedance 等模型使用本地视频参考时仍需要用户已有的安全 HTTPS 素材服务。部分付费路径和具体自定义 ComfyUI 节点的兼容性取决于用户选择的服务、网络条件和节点定义。大项目性能仍在持续优化。本说明不表示所有真实付费渠道、所有公网素材服务或所有自定义节点组合都已经完成验证。
 
 ## 使用范围
 
