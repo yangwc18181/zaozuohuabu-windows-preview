@@ -14,7 +14,7 @@
 
 欢迎加入 画布交流群！反馈问题、交流使用体验或提出新功能建议。
 
-<img width="500" height="500" alt="PixPin_2026-08-14_14-30-48" src="https://github.com/user-attachments/assets/b7170e0f-5a45-42c2-958b-fbadb501e3cd" />
+<img width="400" height="400" alt="PixPin_2026-08-21_16-38-43" src="https://github.com/user-attachments/assets/8de0d054-52d5-4ff8-bbe9-c8ff112bdc07" />
 
 
 
